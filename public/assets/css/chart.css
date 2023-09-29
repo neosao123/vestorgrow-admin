@@ -1,0 +1,148 @@
+.cardTitles{
+     font-family: 'IBM Plex Sans', sans-serif;
+}
+ .cardTitles h5 {
+     color: #263238;
+     letter-spacing: 0.44px;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: normal;
+}
+ .cardTitles p {
+     color: #607D8B;
+     letter-spacing: 0.25px;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 20px;
+}
+ .progress .progress-bar {
+     transition: ease 0.5s;
+     transition: width .6s ease;
+     padding: 0px 10px;
+     font-weight: bold;
+     font-size: 10px;
+     line-height: 16px;
+     letter-spacing: 1.5px;
+     border: 1px solid rgba(0, 0, 0, 0.25);
+     border-radius: 5px;
+     text-align: left;
+}
+ .ProgressBarChart .progress {
+     margin: 10px 0px;
+     height: 25px;
+     background-color: transparent;
+     text-transform: uppercase;
+}
+ .ProgressBarChart .progress:first-child {
+     margin-top: 0px;
+}
+ .ProgressBarChart .progress:last-child {
+     margin-bottom: 0px;
+}
+ .clr1,.point2{
+     background-color: #3A86FF;
+}
+ .clr2,.point7{
+     background-color: #8338EC;
+}
+ .clr3{
+     background-color: #FFCC52;
+}
+ .clr4,.point3{
+     background-color: #FB5607;
+}
+ .clr5,.point4{
+     background-color: #4FD939;
+}
+ .clr6,.point8{
+     background-color: #4A72CF;
+}
+ .clr7,.point5{
+     background-color: #263238;
+}
+ .clr8,.point1{
+     background-color: #FFBE0B;
+}
+ .clr9,.point6{
+     background-color: #EC0000;
+}
+ .clr10,.point9{
+     background-color: #855CF8;
+}
+ .clr10,.point10{
+     background-color: #5865F2;
+}
+ .highcharts-color-0 , .ljpGraphChartSix .highcharts-color-1 {
+     fill: #263238;
+     stroke: #263238;
+}
+ .highcharts-color-1 , .ljpGraphChartFive .highcharts-color-2 {
+     fill: #8338ec;
+     stroke: #8338ec;
+}
+ .highcharts-color-2 , .ljpGraphChartFive .highcharts-color-7 , .ljpGraphChartSix .highcharts-color-0 {
+     fill: #ffbe0b;
+     stroke: #ffbe0b;
+}
+ .highcharts-color-3 , .ljpGraphChartFive .highcharts-color-5,.ljpGraphChartSix .highcharts-color-4 {
+     fill: #fb5607;
+     stroke: #fb5607;
+}
+ .highcharts-color-4 , .ljpGraphChartFour .highcharts-color-1 , .ljpGraphChartFive .highcharts-color-6, .ljpGraphChartSix .highcharts-color-5 {
+     fill: #3a86ff;
+     stroke: #3a86ff;
+}
+ .ljpGraphChartFive .highcharts-color-1 , .ljpGraphChartSix .highcharts-color-2 {
+     fill: #ec0000;
+     stroke: #ec0000;
+}
+ .ljpGraphChartFive .highcharts-color-3 {
+     fill: #5b6be5;
+     stroke: #5b6be5;
+}
+ .ljpGraphChartFive .highcharts-color-4,.ljpGraphChartSix .highcharts-color-3 {
+     fill: #4fd939;
+     stroke: #4fd939;
+}
+ .IndiLists li {
+     letter-spacing: 0.05em;
+     color: #8f8f8f;
+     font-family: var(--ff_dm);
+     font-size: var(--s12);
+     line-height: 18px;
+     margin: 2px 0px;
+     position: relative;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+ .IndiLists li span {
+     width: 10px;
+     height: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.75);
+     border-radius: 50px;
+}
+ .topDeviceTwo .IndiLists,.topDeviceThree .IndiLists {
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 5px;
+}
+ .topDeviceTwo .IndiLists li,.topDeviceThree .IndiLists li {
+     width: 48%;
+}
+ .topDevices .FullViews {
+     margin-bottom: 26px;
+}
+ .topDevices .FullViews:last-child {
+     margin: 0;
+}
+ @media(max-width: 1200px){
+     .fullAllCards .IndiLists {
+         display: flex;
+         column-gap: 5px;
+         flex-wrap: wrap;
+    }
+     .fullAllCards .IndiLists li {
+         width: 48%;
+    }
+}

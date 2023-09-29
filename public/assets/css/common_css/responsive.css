@@ -1,0 +1,684 @@
+/* new ui css start  */
+@media (min-width: 2000px) {
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews h6 {
+    max-width: 100%;
+    height: 64px;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 2000px) {
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews h6 {
+    max-width: 100%;
+    height: 64px;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1800px) {
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews {
+    width: 100%;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .headerSearchBar {
+    /* width: max-content; */
+  }
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews {
+    width: 100%;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1400px) {
+  .headerSearchBar {
+    width: max-content !important;
+  }
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews {
+    width: 100%;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .headerSearchBar {
+    width: max-content !important;
+  }
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews {
+    width: 100%;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1100px) {
+  .headerSearchBar {
+    width: max-content !important;
+  }
+  .card-box-dashbrd {
+    min-width: 20% !important;
+    margin-bottom: -13px !important;
+  }
+  .FullViews {
+    width: 100%;
+  }
+  .FullViews a h3 {
+    font-size: 25px;
+  }
+}
+
+/* new ui css completed */
+
+@media (min-width: 1600px) {
+  .FullViews a {
+    min-height: 140px;
+  }
+  .leftSection {
+    max-width: 300px;
+  }
+  .logoColumn img {
+    /* width: 230px; */
+  }
+  .box_content br {
+    display: none;
+  }
+  .loginInfoSection {
+    min-width: 40%;
+  }
+  .loginFormSection {
+    min-width: 60%;
+  }
+  .changePassword {
+    padding: 54px 40px;
+  }
+}
+@media (min-width: 1201px) {
+  .RowColOne {
+    width: 31%;
+  }
+  .RowColTwo {
+    width: 23%;
+  }
+  .RowColThree {
+    width: 15%;
+  }
+}
+@media (min-width: 1350px) {
+  .publishMintThree .columnCard {
+    width: 20%;
+  }
+}
+@media (max-width: 1400px) {
+  .FullViews a {
+    min-height: 110px;
+  }
+}
+@media (max-width: 1200px) {
+  .accountLeft,
+  .walletAddress,
+  .mobAccountBtn,
+  .total_updates,
+  .update_form {
+    padding: 15px;
+  }
+  .changePassword {
+    padding: 42px 40px;
+  }
+  .loginInfoSection,
+  .loginFormSection {
+    min-width: 50%;
+  }
+  .grid {
+    column-count: 3;
+  }
+}
+@media (max-width: 1199px) {
+  .updates_search {
+    width: 350px;
+  }
+}
+@media (max-width: 1124px) {
+  .user_bottom_header {
+    gap: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .logoColumn,
+  .topHeaderSection {
+    width: auto;
+    padding: 10px 20px;
+    height: 55px;
+  }
+  .footerCard,
+  .logoColumn,
+  .topHeaderSection {
+    padding: 10px 20px;
+  }
+  .logoColumn {
+    padding: 0px 15px;
+    align-items: center;
+  }
+  .ljSectionData {
+    padding: 20px;
+  }
+  .headerSearchBar .input-group {
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+  .headerSearchBar {
+    margin-right: 14px;
+  }
+  .toggleBtn button {
+    width: 40px;
+    padding: 4px;
+    position: relative;
+  }
+  .toggleBtn button span {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin: 0 auto;
+    background: linear-gradient(
+      90deg,
+      #ffbe0b 0%,
+      #fb5607 48.44%,
+      #3a86ff 100%
+    );
+    transition: all ease 0.3s;
+  }
+  .toggleBtn button span.line1 {
+    top: 7px;
+  }
+  .toggleBtn button span.line2 {
+    top: 15px;
+  }
+  .toggleBtn button span.line3 {
+    top: 22px;
+  }
+  .toggleBtn button[aria-expanded="true"] span.line1 {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+  .toggleBtn button[aria-expanded="true"] span.line2 {
+    top: 15px;
+    transform: rotate(-45deg);
+  }
+  .toggleBtn button[aria-expanded="true"] span.line3 {
+    top: 22px;
+    opacity: 0;
+  }
+  .leftSection {
+    position: fixed;
+    right: 0;
+    z-index: 99991;
+    height: 100vh !important;
+    box-shadow: -5px -2px 5px rgb(0 0 0 / 15%);
+    overflow: auto;
+    background: #fff;
+    transform: translate(115%, 0%);
+    transform-origin: right;
+    transition: all ease 0.5s;
+  }
+  .leftSection.show {
+    transform: translate(0%, 0%);
+  }
+  aside.sidebarSection {
+    border-right: 0;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mt_30 {
+    margin-top: 20px;
+  }
+  .buildCourseArea {
+    margin-top: 20px;
+  }
+  .profileInfo textarea {
+    height: 250px !important;
+  }
+  .mt_30 {
+    margin-top: 20px;
+  }
+  .main_table {
+    min-width: 770px !important;
+  }
+  .total_updates_top .walletAddressHead {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .coursebox_right {
+    width: auto;
+  }
+  .buildForm,
+  .addQuestionsForm,
+  .publishMintThree,
+  .buildPublishBtn,
+  .total_updates,
+  .update_form,
+  .users_bottom_part,
+  .logInFormInput {
+    padding: 10px;
+  }
+  .publishMintTwo {
+    padding: 20px;
+  }
+  .custom_link_form,
+  .users_bottom_part {
+    padding: 30px 20px;
+  }
+  .loginFormHeading {
+    padding: 24px;
+  }
+  .logInSection .infoUpdateSec,
+  .loginFormSec {
+    width: 350px;
+  }
+  .logInSection {
+    height: 100vh;
+  }
+  .loginFormHeading img {
+    height: auto;
+    max-width: 240px;
+  }
+  .coursebox_right a {
+    padding: 9px 18px;
+  }
+}
+@media (max-width: 767px) {
+  .footerCard {
+    padding: 25px 15px;
+  }
+  .footerCard div p {
+    font-size: 15px;
+  }
+  .updates_search,
+  .ljpTTPUpdates .updates_search {
+    width: 100%;
+  }
+  .grossary_card_cont {
+    flex-direction: column;
+  }
+  .publishMintThree .d-flex {
+    flex-wrap: wrap;
+  }
+  .publishMintThree .currentlyLive {
+    margin-bottom: 20px;
+  }
+  .publishMintThree .searchBox {
+    width: 640px;
+  }
+  .publishMintTwoForm .publishBtn {
+    margin: 10px 0 30px 0;
+  }
+  .publishNewsletterArea .publishMintTwoForm .publishBtn {
+    margin: 10px 0 0 0;
+  }
+  .accountInner {
+    flex-direction: column;
+  }
+  .accountLeft,
+  .accountRight {
+    width: 100% !important;
+  }
+  .logInSection {
+    height: auto;
+  }
+  .loginFormSection {
+    border: 0px;
+  }
+  .accountLeft,
+  .accountRight {
+    border: 0;
+  }
+  .questionDiv {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .questionCourse,
+  .numberNext {
+    width: 100%;
+  }
+  .numberNext ul {
+    justify-content: end !important;
+  }
+  .uploadDiv {
+    margin-top: 30px;
+  }
+  .profileInfo textarea {
+    height: 180px !important;
+  }
+  .user_bottom_header .updates_search {
+    width: 100%;
+  }
+  .current_courses {
+    margin-top: 20px;
+  }
+  .user_bottom_header {
+    gap: 15px;
+  }
+  .current_courses .coursebox_right a {
+    padding: 0px 10px;
+    margin-right: 10px;
+    height: 39px;
+    line-height: 39px;
+  }
+  .crsRight .updates_search {
+    width: auto;
+  }
+  .search_btn {
+    width: 45px;
+  }
+  .updates_search button.btn {
+    padding: 0px 10px;
+  }
+  .current_courses_table thead th,
+  .current_courses_table thead th:first-child {
+    padding: 5px 12px;
+    vertical-align: middle;
+  }
+
+  .current_courses_table tbody td:first-child,
+  .current_courses_table tbody td {
+    padding: 5px 12px;
+    vertical-align: top;
+  }
+
+  .logInSection {
+    flex-direction: column-reverse;
+  }
+  .logInSection {
+    height: auto;
+  }
+  .loginInfoSection,
+  .loginFormSection {
+    min-width: 100%;
+  }
+  .loginInfoSection {
+    border-right: 0;
+  }
+  .infoUpdateSec {
+    margin: 12px 0;
+  }
+  .loginFormSec {
+    margin: 20px 0;
+  }
+  .logInSection .infoUpdateSec,
+  .loginFormSec {
+    width: 450px;
+  }
+  .infoUpdateSec .infoUpdateNotification.collapse:not(.show) {
+    display: none;
+  }
+  .infoUpdateSec .infoUpdateHeader {
+    pointer-events: unset;
+  }
+  .or_text {
+    margin: 15px 0;
+    line-height: 18px;
+  }
+  .publishMintTwoForm .formDescription {
+    height: auto;
+  }
+  .grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 575px) {
+  .publishMintTwo {
+    padding: 10px;
+  }
+  .headerSearchBar {
+    margin-right: 10px;
+  }
+  .headerBtnSec {
+    column-gap: 10px;
+  }
+  .toggleBtn button {
+    width: 34px;
+  }
+  .footerCard,
+  .topHeaderSection {
+    padding: 10px 15px;
+  }
+  .ljSectionData {
+    padding: 15px;
+  }
+  .logoColumn img {
+    max-width: 140px;
+  }
+  .footerCard .btmFlex {
+    flex-direction: column;
+    row-gap: 14px;
+    align-items: start !important;
+  }
+  .footerCard div p {
+    order: 2;
+  }
+  .FullViews a h6 {
+    padding-bottom: 10px;
+  }
+  .FullViews a {
+    padding: 10px 4px;
+    min-height: 90px;
+  }
+  .FullViews a .data2Line h3 {
+    line-height: 18px;
+  }
+  .FullViews a .data2Line p {
+    line-height: 13px;
+  }
+  .headerSearchBar {
+    margin-right: 10px;
+    display: none;
+  }
+  .headerMenu.ms-lg-auto {
+    margin-left: auto;
+  }
+  .needHelpBox {
+    padding: 20px 10px;
+  }
+  .topNav {
+    width: 100%;
+  }
+  .leftSection {
+    max-width: 220px;
+  }
+  .footerCard {
+    padding: 25px 15px;
+  }
+  .profilePicOuter {
+    flex-direction: column;
+  }
+  .accountLeft,
+  .changePassword,
+  .walletAddress,
+  .mobAccountBtn,
+  .total_updates,
+  .update_form {
+    padding: 15px;
+  }
+  .logInSection .infoUpdateSec,
+  .loginFormSec {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .mt_30 {
+    margin-top: 15px;
+  }
+  .buildCourseArea {
+    margin-top: 15px;
+  }
+  .questionCourse {
+    text-align: center;
+  }
+  .numberNext ul {
+    justify-content: center !important;
+  }
+  .buildForm .profileGroup {
+    flex-wrap: wrap;
+  }
+  .childGroupOne {
+    width: 100%;
+  }
+  .childGroupTwo {
+    width: 100%;
+  }
+  .current_courses_header .updates_search .update_search_bar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .current_courses_header .updates_search .coursebox_right {
+    width: 51%;
+    text-align: left;
+  }
+  .current_courses_header .updates_search {
+    display: block !important;
+  }
+  .mt_30 {
+    margin-top: 15px;
+  }
+  .current_courses {
+    margin-top: 15px;
+  }
+  .crsRight {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .main_table {
+    min-width: 660px !important;
+  }
+  .publishMintOne {
+    padding: 5px 10px;
+  }
+  .publishMintCardArea .columnCard {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .FullViews a h6 {
+    padding-bottom: 6px;
+    font-size: 10px;
+  }
+  .headerBtnSec a img {
+    height: 28px;
+  }
+  .myaccnt .btnOne img {
+    width: 20px;
+    height: 20px;
+  }
+  .logoColumn {
+    padding: 0px 10px;
+  }
+  .topHeaderSection .learnBtn,
+  .topHeaderSection .ljBtn {
+    font-size: 10px;
+    padding: 0px 6px;
+    height: 28px;
+    line-height: 28px;
+  }
+  .toggleBtn button {
+    width: 30px;
+  }
+  .toggleBtn button span.line1 {
+    top: 7px;
+  }
+  .toggleBtn button span.line2 {
+    top: 13px;
+  }
+  .toggleBtn button span.line3 {
+    top: 19px;
+  }
+  .toggleBtn button[aria-expanded="true"] span.line1 {
+    top: 12px;
+    transform: rotate(45deg);
+  }
+  .toggleBtn button[aria-expanded="true"] span.line2 {
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+  .allCardList .col-xl-3.col-md-4:nth-child(odd) {
+    padding-right: 7px;
+  }
+  .allCardList .col-xl-3.col-md-4:nth-child(even) {
+    padding-left: 7px;
+  }
+  .allCardList .col-xl-3 {
+    padding-bottom: 15px !important;
+  }
+  .grid {
+    column-count: 1;
+  }
+  .total_tickets div.d-flex {
+    font-size: 11px;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .publishMintCardArea .columnCard {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .prevNextDiv ul,
+  .numberNext ul {
+    column-gap: 5px;
+    justify-content: center !important;
+  }
+  .profileInfo textarea {
+    height: 120px !important;
+  }
+  .coursebox_left {
+    width: 100%;
+  }
+  .current_courses_table thead th,
+  .current_courses_table tbody td {
+    padding: 8px 12px;
+  }
+  .users_bottom_part {
+    padding: 20px;
+  }
+  .custom_link_form {
+    padding: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .logoColumn img {
+    max-width: 112px;
+  }
+}
