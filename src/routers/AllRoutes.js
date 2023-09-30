@@ -70,6 +70,10 @@ import News from "../pages/News/News";
 import NewsForm from "../pages/News/NewsForm";
 import TestimonialList from "../pages/Testimonial/TestimonialList";
 import TestimonialForm from "../pages/Testimonial/TestimonialForm";
+import NewsCategory from "../pages/NewsCategory/NewsCategory";
+import NewsAuthor from "../pages/NewsAuthor/NewsAuthor";
+import NewsAuthorForm from "../pages/NewsAuthor/NewsAuthorForm";
+import NewsCategoryForm from "../pages/NewsCategory/NewsCategoryForm";
 function AllRoutes() {
   const [isAuthenticated, setIsAuthenticated] = useState(window.user ? true : false);
 
@@ -128,6 +132,13 @@ function AllRoutes() {
           <Route exact path="/create_news/:id" element={<NewsForm />} />
           <Route exact path="/create_news" element={<NewsForm />} />
           <Route exact path="/user" element={<Users />} />
+
+          <Route exact path="/newsauthor" element={<NewsAuthor />} />
+          <Route exact path="/create_newsauthor" element={<NewsAuthorForm />} />
+          <Route exact path="/newscategory" element={<NewsCategory />} />
+          <Route exact path="/create_newscategory" element={<NewsCategoryForm />} />
+          <Route exact path="/create_newscategory/:id" element={<NewsCategoryForm />} />
+          <Route exact path="/create_newsauthor/:id" element={<NewsAuthorForm />} />
 
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>

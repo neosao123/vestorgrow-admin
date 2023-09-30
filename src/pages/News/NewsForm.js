@@ -10,12 +10,14 @@ import WebinarService from "../../services/WebinarService";
 import UserService from "../../services/UserService";
 import WebinarCategoryService from "../../services/WebinarCategoryService";
 import NewsService from "../../services/NewsService";
+import AuthorService from "../../services/AuthorService";
 
 export default function NewsForm() {
   const params = useParams();
   const router = useNavigate();
   const webinarServ = new WebinarService();
   const categoryServ = new WebinarCategoryService();
+  const authorServ = new AuthorService()
   const userServ = new UserService();
   const newsServ = new NewsService();
   const [selectedVideo, setSelectedVideo] = useState();
@@ -50,7 +52,7 @@ export default function NewsForm() {
       let activity = {
         filter: {},
       };
-      const response = await userServ.userList(activity);
+      const response = await authorServ.userList(activity);
       if (response.data) {
         setUserList(response.data);
       }
@@ -189,7 +191,7 @@ export default function NewsForm() {
                             userList.map((user, idx) => {
                               return (
                                 <option value={user._id} key={idx} selected={user._id === formik.values.createdBy ? true : false}>
-                                  {user.user_name}
+                                  {user.user_name || user.name}
                                 </option>
                               );
                             })}

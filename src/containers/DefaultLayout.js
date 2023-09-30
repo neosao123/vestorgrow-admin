@@ -357,6 +357,54 @@ function DefaultLayout({ children, handleAuthState }) {
                   <Link
                     className={
                       "nav-link d-flex" +
+                      (selectedNav == "newscategory" ? " active" : "")
+                    }
+                    to="/newscategory"
+                    onClick={() => setSelectedNav("newscategory")}
+                  >
+                    <svg
+                      className="img-fluid sidebar-img"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.37324 2.82886C7.06044 2.82886 6.80658 3.08272 6.80658 3.39552V13.0289H9.63991V3.39552C9.63991 3.08272 9.38604 2.82886 9.07324 2.82886H7.37324ZM0.573242 3.96219V15.2955H14.7399V14.1622H1.70658V3.96219H0.573242ZM11.3399 3.96219C11.0271 3.96219 10.7732 4.21606 10.7732 4.52886V13.0289H13.6066V4.52886C13.6066 4.21606 13.3527 3.96219 13.0399 3.96219H11.3399ZM3.40658 6.22886C3.09378 6.22886 2.83991 6.48272 2.83991 6.79552V13.0289H5.67324V6.79552C5.67324 6.48272 5.41938 6.22886 5.10658 6.22886H3.40658Z"
+                        fill="#7D8190"
+                      />
+                    </svg>
+
+                    <div className="sidebar-text">News Category</div>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className={
+                      "nav-link d-flex" +
+                      (selectedNav == "newsauthor" ? " active" : "")
+                    }
+                    to="/newsauthor"
+                    onClick={() => setSelectedNav("newsauthor")}
+                  >
+                    <svg
+                      className="img-fluid sidebar-img"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.37324 2.82886C7.06044 2.82886 6.80658 3.08272 6.80658 3.39552V13.0289H9.63991V3.39552C9.63991 3.08272 9.38604 2.82886 9.07324 2.82886H7.37324ZM0.573242 3.96219V15.2955H14.7399V14.1622H1.70658V3.96219H0.573242ZM11.3399 3.96219C11.0271 3.96219 10.7732 4.21606 10.7732 4.52886V13.0289H13.6066V4.52886C13.6066 4.21606 13.3527 3.96219 13.0399 3.96219H11.3399ZM3.40658 6.22886C3.09378 6.22886 2.83991 6.48272 2.83991 6.79552V13.0289H5.67324V6.79552C5.67324 6.48272 5.41938 6.22886 5.10658 6.22886H3.40658Z"
+                        fill="#7D8190"
+                      />
+                    </svg>
+
+                    <div className="sidebar-text">News Author</div>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className={
+                      "nav-link d-flex" +
                       (selectedNav == "news" ? " active" : "")
                     }
                     to="/news"
