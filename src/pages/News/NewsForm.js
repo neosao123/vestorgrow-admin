@@ -24,13 +24,16 @@ export default function NewsForm() {
   const [selectedBanner, setSelectedBanner] = useState();
   const [userList, setUserList] = useState([]);
   const [categoryList, setCategoryList] = useState([]);
+  const [selectedFile, setSelectedFile] = useState(null)
   const [value, setValue] = useState({
     title: "",
     desc: "",
     createdBy: "",
     type: "",
-    link: ""
+    link: "",
+    mediaFiles: ""
   });
+  const navigate = useNavigate()
   // const imageChange = (e) => {
   //   if (e.target.files && e.target.files.length > 0) {
   //     setSelectedVideo(e.target.files[0]);
@@ -80,18 +83,31 @@ export default function NewsForm() {
     link: Yup.string(),
     createdBy: Yup.string().required("Author is Required"),
     type: Yup.string().required("Type is Required"),
+    // image: Yup.string().required("Image is Required.")
   });
 
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file)
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setPreviewUrl(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
   const onSubmit = async (values, { resetForm }) => {
-    let obj = {
-      title: values.title,
-      desc: values.desc,
-      createdBy: values.createdBy,
-      type: values.type,
-    };
+    const formData = new FormData();
+    formData.append("title", values.title);
+    formData.append("desc", values.desc);
+    formData.append("createdBy", values.createdBy);
+    formData.append("type", values.type);
     if (values._id) {
-      obj._id = values._id
-      newsServ.editNewsRecord(values).then((res) => {
+      formData.append("_id", values._id)
+      newsServ.editNewsRecord(formData).then((res) => {
         if (res.err) {
           toast.error(res.err);
         } else {
@@ -99,12 +115,16 @@ export default function NewsForm() {
         }
       });
     } else {
-      delete values._id;
-      newsServ.addNewsRecord(obj).then((res) => {
+
+      if (selectedFile) {
+        formData.append("mediaFiles", selectedFile)
+      }
+      return await newsServ.addNewsRecord(formData).then((res) => {
         if (res.err) {
           toast.error(res.err);
         } else {
           toast.success("Record added successfully")
+          navigate("/create_news")
         }
       });
     }
@@ -146,7 +166,7 @@ export default function NewsForm() {
         <div className="custom_link_form">
           <div className=" CreateCustomLink">
             <div className="update_form accountInner p-0 border-0">
-              <form onSubmit={formik.handleSubmit}>
+              <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
                 <div
                   className="row"
                   style={{
@@ -168,9 +188,29 @@ export default function NewsForm() {
                         onBlur={formik.handleBlur}
                         value={formik.values.title}
                       />
-                      {formik.touched.title && formik.errors.titel ? (
+                      {formik.touched.title && formik.errors.title ? (
                         <div className="formik-errors bg-error">
                           {formik.errors.title}
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-3 ">
+                    <div className="form-group m-0">
+                      <label htmlFor="for">Image</label>
+                      <span className="star">*</span>
+                      <input
+                        type="file"
+                        className="form-control m-0"
+                        placeholder="Enter the Name"
+                        name="mediaFiles"
+                        onChange={handleFileChange}
+                      // onBlur={formik.handleBlur}
+                      // value={formik.values.image}
+                      />
+                      {formik.touched.image && formik.errors.image ? (
+                        <div className="formik-errors bg-error">
+                          {formik.errors.image}
                         </div>
                       ) : null}
                     </div>
